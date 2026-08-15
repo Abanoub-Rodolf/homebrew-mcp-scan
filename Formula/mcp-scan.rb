@@ -13,7 +13,7 @@ class McpScan < Formula
   end
 
   test do
-    assert_match "mcp-scan", shell_output("#{bin}/mcp-scan --version")
+    assert_match "2.0.4", shell_output("#{bin}/mcp-scan --version")
     assert_match "Security scanner", shell_output("#{bin}/mcp-scan --help")
   end
 end
