@@ -1,8 +1,8 @@
 class McpScan < Formula
   desc "Open-source security scanner for MCP server configurations"
   homepage "https://github.com/Abanoub-Rodolf/mcp-scan"
-  url "https://registry.npmjs.org/mcp-scan/-/mcp-scan-2.0.12.tgz"
-  sha256 "1ce3182f678f7e9e15adedea111b9d9d7b1d97083f3173a493ef9504bae8b1c8"
+  url "https://registry.npmjs.org/mcp-scan/-/mcp-scan-2.0.13.tgz"
+  sha256 "f3787cc8c2554ffb3eb65aabbd0fc5d84b7c3d01fa8c6cf7be07a16cdf033808"
   license "MIT"
 
   depends_on "node"
@@ -13,7 +13,7 @@ class McpScan < Formula
   end
 
   test do
-    assert_match "2.0.12", shell_output("#{bin}/mcp-scan --version")
+    assert_match "2.0.13", shell_output("#{bin}/mcp-scan --version")
     assert_match "Security scanner", shell_output("#{bin}/mcp-scan --help")
   end
 end
